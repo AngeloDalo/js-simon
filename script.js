@@ -23,7 +23,7 @@ for (let i=0; i<TOT_NUMERI; i++) {
 //pulizia numeri html
 setTimeout(function(){ 
         container.innerHTML = "";
-}, 30000);
+}, 10000);
 
 //inserimento numeri utente 
 setTimeout(function(){ 
@@ -52,4 +52,4 @@ setTimeout(function(){
     } else {
         alert ("HAI PERSO " + contatore + " NUMERI INDOVINATI: " + numeriIndovinati);
     }
-}, 31000);
+}, 40000);
