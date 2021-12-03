@@ -38,9 +38,11 @@ setTimeout(function(){
 
     //conta dei numeri indovinati
     for (let i=0; i<TOT_NUMERI; i++) {
-        if (numeriUtente[i] == numeriCasuali [i]) {
-            numeriIndovinati.push(numeriCasuali[i]);
-            contatore = contatore + 1;
+        for (let y=0; y<TOT_NUMERI; y++) {
+            if (numeriUtente[y] == numeriCasuali [i]) {
+                numeriIndovinati.push(numeriCasuali[i]);
+                contatore = contatore + 1;
+            }
         }
     }
 
