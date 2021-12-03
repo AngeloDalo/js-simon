@@ -10,10 +10,13 @@ const numeriCasuali = [];
 const TOT_NUMERI = 5;
 const MIN_NUMERO = 0;
 const MAX_NUMERO = 100;
+const container = document.querySelector(".container");
+console.log(container);
 
 for (let i=0; i<TOT_NUMERI; i++) {
     let numero = getRndInteger(MIN_NUMERO, MAX_NUMERO);
     numeriCasuali.push(numero);
+    container.innerHTML = container.innerHTML + numeriCasuali[i] + " ";
 }
 
 console.log (numeriCasuali);
